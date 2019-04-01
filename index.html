@@ -22,15 +22,15 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 
 	<!-- CSS Header and Footer -->
-	<link rel="stylesheet" href="assets/css/headers/header-default.css">
+	<link rel="stylesheet" href="assets/css/headers/header-v6.css">
 	<link rel="stylesheet" href="assets/css/footers/footer-v1.css">
 
 	<!-- CSS Implementing Plugins -->
 	<link rel="stylesheet" href="assets/plugins/animate.css">
 	<link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
 	<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/plugins/parallax-slider/css/parallax-slider.css">
 	<link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="assets/plugins/layer-slider/layerslider/css/layerslider.css">
 
 	<!-- CSS Theme -->
 	<link rel="stylesheet" href="assets/css/theme-colors/default.css" id="style_color">
@@ -40,26 +40,40 @@
 	<link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
-<body>
+<body class="header-fixed header-fixed-space">
 	<div class="wrapper">
-		<!--=== Header ===-->
-		<div class="header">
-			<div class="container">
-				<div class="margin-bottom-60"></div>
-				<!-- Logo -->
-				<a class="logo" href="index.html">
-					<img src="#" alt="">
-				</a>
-
-				
-			</div><!--/end container-->
-
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+		<!--=== Header v6 ===-->
+		<div class="header-v6 header-classic-white header-sticky">
+			<!-- Navbar -->
+			<div class="navbar mega-menu" role="navigation">
 				<div class="container">
-					<ul class="nav navbar-nav">
-						<!-- Home -->
-						<li>
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="menu-container">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<!-- Navbar Brand -->
+						<div class="navbar-brand">
+							<a href="index.html">
+								<img class="" src="#" alt="">
+							</a>
+						</div>
+						<!-- ENd Navbar Brand -->
+
+						<!-- Header Inner Right -->
+				
+						<!-- End Header Inner Right -->
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-responsive-collapse">
+						<div class="menu-container">
+							<ul class="nav navbar-nav">
+								<li>
 							<a href="index.html">
 								Home
 							</a>
@@ -72,6 +86,7 @@
 								<li><a href="codeofconduct.html">Code of Conduct</a></li>
 								<li><a href="#">Sponsorship</a></li>
 								<li><a href="https://goo.gl/forms/VVexbjpdnld4SfLj2">Registration</a></li>
+								<li><a href="call.html">Call for Participation</a></li>
 							</ul>
 						</li>
 				
@@ -85,39 +100,58 @@
 								Contact
 							</a>
 						</li>
-						
-						<!-- End Home -->
-					</ul>
-				</div><!--/end container-->
-			</div><!--/navbar-collapse-->
+								
+							</ul>
+						</div>
+					</div><!--/navbar-collapse-->
+				</div>
+			</div>
+			<!-- End Navbar -->
 		</div>
-		<!--=== End Header ===-->
+		<!--=== End Header v6 ===-->
 
 		<!--=== Slider ===-->
-		
-			<!--=== Slider ===-->
-		<div class="slider-inner">
-					<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-			  <div class="carousel-inner">
-				<div class="carousel-item active">
-				  <img class="d-block w-100" src="assets\img\indaba\bg-crop.jpg" alt="First slide">
-				</div>
-				
-			  </div>
+		<div id="layerslider" style="width: 100%; height: 500px;">
+			<!-- First slide -->
+			<div class="ls-slide" style="slidedirection: right; transition2d: 92,93,105; ">
+				<img src="assets/img/indaba/bg-crop.jpg" class="ls-bg" alt="Slide background">
 			</div>
-		</div>
-		
-		
+			<!-- End First slide -->
+
+			<!-- Second Slide -->
+			<div class="ls-slide" data-ls="slidedelay:4500; transition2d:25;">
+				<img src="assets/img/indaba/bg-crop.jpg" class="ls-bg" alt="Slide background"/>
+
+				
+			</div>
+			<!-- End Second Slide -->
+
+			<!-- Third Slide -->
+			<div class="ls-slide" data-ls="transition2d:93;">
+				<img src="assets/img/indaba/bg-crop.jpg" class="ls-bg" alt="Slide background">
+
+
+				</div>
+			<!-- Third Slide -->
+		</div><!--/layer_slider-->
+		<!--=== End Slider ===-->
 		
 		<div class="purchase">
-		<div class="container overflow-h">
-				<div class="row">
-					
-					<div class="col-md-3 btn-buy animated fadeInRight">
-						<a href="https://goo.gl/forms/VVexbjpdnld4SfLj2" class="btn-u btn-u-lg">Click here to Register for the Indaba</a>
+		<div class="call-action-v1 bg-color-light">
+			<div class="container">
+				<div class="call-action-v1-box">
+					<div class="call-action-v1-in">
+						<p>A Deep Learning Indaba X is a locally-organised that helps spread knowledge and builds capacity in machine learning. In this light, a Machine
+							Learning Bootcamp will be conducted  in Lusaka, Zambia to provide people from the academia aswell as from the
+							corporate world a platfrom were knowledge in Machine Learning can be shared and spread. 
+					</div>
+					<div class="call-action-v1-in inner-btn page-scroll">
+						<a href="https://goo.gl/forms/VVexbjpdnld4SfLj2" class="btn-u btn-brd btn-brd-hover btn-u-dark btn-u-block">REGISTER TODAY</a>
 					</div>
 				</div>
 			</div>
+		</div>
+		
 			<div class="margin-bottom-30" ></div>
 			<div class="container overflow-h">
 				<div class="row">
@@ -142,10 +176,31 @@
 						</ul>
 					</div>
 					
+					<div class="col-md-9 animated fadeInRight">
+					<div class="headline"><h2>Important Dates</h2></div>
+						<table class="table">
+							<tbody>
+								<tr>
+									<td>Deadline for Submission of Abstracts: </td> <td>5th April, 2019</td>
+								</tr>
+								<tr>
+									<td>Closing date for Registration: </td> <td>5th April, 2019</td>
+								</tr>
+								<tr>
+									<td>Notification of Acceptance:  </td> <td>5th April, 2019</td>
+								</tr>
+								<tr>
+									<td>Submission of Poster: </td> <td>12th April, 2019</td>
+								</tr>
+							</tbody>
+								
+						</table>
+					</div>
+					
 				</div>
 			</div>
 		</div><!--/row-->
-		<!-- End Purchase Block -->
+<!-- End Purchase Block -->
 
 		<!--=== Content Part ===-->
 		
@@ -205,8 +260,7 @@
 		<!--=== End Footer Version 1 ===-->
 	</div><!--/wrapper-->
 
-	
-			
+		
 
 	<!-- JS Global Compulsory -->
 	<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
@@ -215,22 +269,25 @@
 	<!-- JS Implementing Plugins -->
 	<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
 	<script type="text/javascript" src="assets/plugins/smoothScroll.js"></script>
-	<script type="text/javascript" src="assets/plugins/parallax-slider/js/modernizr.js"></script>
-	<script type="text/javascript" src="assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
 	<script type="text/javascript" src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+	<script type="text/javascript" src="assets/plugins/layer-slider/layerslider/js/greensock.js"></script>
+	<script type="text/javascript" src="assets/plugins/layer-slider/layerslider/js/layerslider.transitions.js"></script>
+	<script type="text/javascript" src="assets/plugins/layer-slider/layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
 	<!-- JS Customization -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 	<!-- JS Page Level -->
 	<script type="text/javascript" src="assets/js/app.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/owl-carousel.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/layer-slider.js"></script>
 	<script type="text/javascript" src="assets/js/plugins/style-switcher.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/parallax-slider.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/owl-carousel.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/owl-recent-works.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
 			App.init();
-			OwlCarousel.initOwlCarousel();
+			LayerSlider.initLayerSlider();
 			StyleSwitcher.initStyleSwitcher();
-			ParallaxSlider.initParallaxSlider();
+			OwlCarousel.initOwlCarousel();
+			OwlRecentWorks.initOwlRecentWorksV2();
 		});
 	</script>
 	<!--[if lt IE 9]>
